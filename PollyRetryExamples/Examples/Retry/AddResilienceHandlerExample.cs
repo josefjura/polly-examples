@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http.Resilience;
 using PollyRetryExamples.Resilience;
 
-namespace PollyRetryExamples.Examples;
+namespace PollyRetryExamples.Examples.Retry;
 
 /// <summary>
 /// Example 7: AddResilienceHandler — the modern, DI-native way to attach a Polly

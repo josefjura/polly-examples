@@ -2,7 +2,7 @@ using Polly;
 using Polly.Retry;
 using PollyRetryExamples.Services;
 
-namespace PollyRetryExamples.Examples;
+namespace PollyRetryExamples.Examples.Retry;
 
 /// <summary>
 /// Example 1: Basic retry — retries immediately up to N times on any exception.

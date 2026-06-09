@@ -2,7 +2,7 @@ using Polly;
 using Polly.Retry;
 using PollyRetryExamples.Services;
 
-namespace PollyRetryExamples.Examples;
+namespace PollyRetryExamples.Examples.Retry;
 
 /// <summary>
 /// Example 5: Retry based on the RESULT of the operation, not just exceptions.

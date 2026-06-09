@@ -1,10 +1,15 @@
-using PollyRetryExamples.Examples;
+using PollyRetryExamples.Examples.CircuitBreaker;
+using PollyRetryExamples.Examples.Fallback;
+using PollyRetryExamples.Examples.RateLimiter;
+using PollyRetryExamples.Examples.Retry;
 
 Console.WriteLine("Polly Retry Policy Examples");
 Console.WriteLine("============================");
 Console.WriteLine("Polly v8 uses ResiliencePipeline — a unified, composable resilience API.");
 Console.WriteLine("Each example below demonstrates a different retry strategy.");
 Console.WriteLine();
+
+// ── Retry ─────────────────────────────────────────────────────────────────────
 
 // 1. Immediate retry — no delay, just try again
 await BasicRetryExample.RunAsync();
@@ -26,5 +31,20 @@ await HttpClientRetryExample.RunAsync();
 
 // 7. AddResilienceHandler — modern DI-native approach with policy split to its own file
 await AddResilienceHandlerExample.RunAsync();
+
+// ── Circuit Breaker ────────────────────────────────────────────────────────────
+
+// 8. Circuit Breaker — stops calls to a failing service so it can recover
+await CircuitBreakerExample.RunAsync();
+
+// ── Rate Limiter ───────────────────────────────────────────────────────────────
+
+// 9. Rate Limiter — caps call volume to protect caller and downstream service
+await RateLimiterExample.RunAsync();
+
+// ── Fallback ──────────────────────────────────────────────────────────────────
+
+// 10. Fallback — return a safe default when all else fails; also retry + fallback combined
+await FallbackExample.RunAsync();
 
 Console.WriteLine("All examples completed.");

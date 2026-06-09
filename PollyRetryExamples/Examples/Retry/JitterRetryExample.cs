@@ -2,7 +2,7 @@ using Polly;
 using Polly.Retry;
 using PollyRetryExamples.Services;
 
-namespace PollyRetryExamples.Examples;
+namespace PollyRetryExamples.Examples.Retry;
 
 /// <summary>
 /// Example 4: Exponential backoff WITH jitter.

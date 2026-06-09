@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Polly.Retry;
 
-namespace PollyRetryExamples.Examples;
+namespace PollyRetryExamples.Examples.Retry;
 
 /// <summary>
 /// Example 6: Retry policy applied to HttpClient via IHttpClientFactory.

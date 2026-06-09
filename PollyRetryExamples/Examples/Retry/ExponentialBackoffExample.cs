@@ -2,7 +2,7 @@ using Polly;
 using Polly.Retry;
 using PollyRetryExamples.Services;
 
-namespace PollyRetryExamples.Examples;
+namespace PollyRetryExamples.Examples.Retry;
 
 /// <summary>
 /// Example 3: Exponential backoff — the delay doubles with each retry attempt.

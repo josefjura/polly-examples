@@ -2,7 +2,7 @@ using Polly;
 using Polly.Retry;
 using PollyRetryExamples.Services;
 
-namespace PollyRetryExamples.Examples;
+namespace PollyRetryExamples.Examples.Retry;
 
 /// <summary>
 /// Example 2: Wait-and-retry with a fixed delay between each attempt.
